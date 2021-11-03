@@ -1,5 +1,5 @@
 
-fetch("http://127.0.0.1:9000/view/f09d4c45-4212-4008-bdcd-9376c8ec813a").then((res) => {
+fetch("http://127.0.0.1:9000/view/636197d2-c376-45ca-82af-3459c309e259").then((res) => {
 	return res.text();
 }).then(data => {
 	var img = document.createElement("img");
