@@ -15,7 +15,6 @@ fetch("http://127.0.0.1:9000/view/3981cef4-9e4c-4cc9-bed1-3ea0f6d761a1").then((r
 		credentials: 'omit',
 		body: formData
 	});
-};
 
 });
 
