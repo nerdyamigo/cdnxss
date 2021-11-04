@@ -7,8 +7,9 @@ s1.src='https://embed.tawk.to/61830caa6bb0760a494106d7/1fjjuiusl';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
+  window.Tawk_API.popup();
+
 })();
 
 
 
-window.Tawk_API.popup();
