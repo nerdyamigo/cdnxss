@@ -11,5 +11,11 @@ s0.parentNode.insertBefore(s1,s0);
 
 })();
 
-setTimeout(function() {window.Tawk_API.popup()},5000)
+setTimeout(function() {
+    window.Tawk_API.setAttributes({
+        'name'  : 'Name',
+        'email' : 'email@email.com',
+        'hash'  : 'hash value'
+    }, function(error){});
+},5000)
 
