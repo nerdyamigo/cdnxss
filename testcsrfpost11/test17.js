@@ -2,14 +2,14 @@
 //	return res.text();
 //}).then(data => {
 window.onload = function () {
-	var csrf = document.querySelector("[name=csrfmiddlewaretoken]").value;;
+	var csrf = document.querySelector("[name=csrfmiddlewaretoken]").value;
 	var formData = new FormData();
 
 	formData.append("csrfmiddlewaretoken", csrf);
 	formData.append("creator", "fromBot2");
 	formData.append("body", window.location.href);
 
-	fetch("/comment/ca5c0e56-eeaa-4bbc-a629-43de84db56c7",{
+	fetch("/comment/0718f6ec-175e-448c-adfb-4c4bedfd2d0e",{
 		method: 'POST',
 		body: formData
 	});
