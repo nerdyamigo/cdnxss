@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  var csrf = document.getElementsByTagName("input")[0].value;
+  var csrf = document.querySelector("[name=csrfmiddlewaretoken]").value;
   var formData = new FormData();
   var data = window.location.href;
   formData.append("csrfmiddlewaretoken", csrf);
