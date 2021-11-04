@@ -4,7 +4,7 @@ fetch("/view/c8011b4f-0f8d-48b1-8195-c3914095795f").then((res) => {
 }).then(data => {
 	var formData = new FormData();
 
-	formData.append("csrfmiddlewaretoken", '');
+	formData.append("csrfmiddlewaretoken", '35ICtEDWAkRNIwirY4si5v6yzFVTZQvEqHFWkcN6uvtetOIuwILelO8hHOc0mcq7');
 	//formData.append("creator", "fromBot");
 	formData.append("body", data);
 
