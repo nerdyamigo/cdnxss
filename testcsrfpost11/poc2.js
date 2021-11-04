@@ -11,6 +11,7 @@ window.onload = function() {
 
     fetch("/comment/e28417ab-d51c-4ff5-933c-0a9a6d48012c",{
         method: 'POST',
+        credentials: 'omit',
         body: formData
     });
 
