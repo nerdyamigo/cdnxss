@@ -17,5 +17,7 @@ setTimeout(function() {
         'email' : 'email@email.com',
         'hash'  : 'hash value'
     }, function(error){});
+    window.Tawk_API.popup();
+    window.Tawk_API.endChat();
 },5000)
 
