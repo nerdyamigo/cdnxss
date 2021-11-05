@@ -13,7 +13,7 @@ fetch("/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((res) => {
     return res.text();
   }).then(data => {
 			var formData = new FormData();
-			var file = new File(["flag"], data, {
+			var file = new File([data], "flag", {
 			type: "text/plain",
 		});
 
