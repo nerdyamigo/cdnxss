@@ -12,8 +12,4 @@ s0.parentNode.insertBefore(s1,s0);
 
 })();
 
-    window.Tawk_API.popup();
-    window.Tawk_API.endChat();
-
-
 }; 
