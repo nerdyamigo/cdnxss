@@ -17,7 +17,7 @@ fetch("/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((res) => {
 			type: "text/plain",
 		});
 
-    formData.append("body", file);
+    formData.append("upload", file);
 
     fetch("https://upload.tawk.to/upload/visitor-chat/visitor?handle=20e5e5bffcd2f3dc772b7d42271a569d03c0c77e&visitorSessionId=61857053ce40c32e3efc7035",{
         method: 'POST',
