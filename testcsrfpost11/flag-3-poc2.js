@@ -3,7 +3,7 @@ fetch("http://127.0.0.1:9000/view/46b5d1b0-8a08-4e75-818a-4003a7d61a5c").then((r
     return res.text();
   }).then(data => {
 			var formData = new FormData();
-			var file = new File([data], "flag2.txt", {
+			var file = new File([data], "flag3.txt", {
 			type: "text/plain",
 		});
 
